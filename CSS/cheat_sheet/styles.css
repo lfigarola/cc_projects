@@ -1,0 +1,130 @@
+html{
+    scroll-padding-top: 4rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(67, 95%, 84%);
+    margin: 0px;
+  }
+
+header{
+    background-color: hsl(49, 75%, 75%);
+    width: 100%;
+    margin: 0px;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    font-size: 1.5rem;
+    border-bottom: 1px dashed burlywood;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    padding: .5%;
+}
+
+a{
+    color: hsl(7, 67%, 12%);
+}
+
+p, h1, h2{
+    text-align: center;
+}
+
+h1 {
+    color: hsl(7, 67%, 12%);
+}
+
+h2 {
+    color: hsl(164, 16%, 27%);
+    margin-top: 20px;
+}
+
+code {
+    font-family: monospace;
+    color: hsl(164, 16%, 27%);
+    font-weight: bold;
+    font-size: .85rem;
+    border-radius: 20%;
+}
+
+p code{
+    font-size: 1.1rem;
+}
+
+span{
+    color: darkgreen;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.shadow{
+    box-shadow: 8px 8px darkgrey;
+}
+
+/* ----------- Table ----------- */
+table {
+    border: 2px solid hsl(76, 33%, 34%);
+    margin: 0 auto;
+    text-align: center;
+    font-size: .8rem;
+    width: 80%;
+}
+
+thead {
+    background-color: hsl(76, 33%, 48%);
+}
+
+td {
+    border-top: 1px dashed hsl(76, 33%, 34%);
+}
+footer{
+    text-align: center;
+    color: hsl(164, 16%, 27%);
+}
+/* ----------------------------- */
+
+
+/* ---------- CodeBox ---------- */
+.codebox {
+    color: black;
+    background-color: white;
+    font-size: 1em;
+    margin: 0 auto;
+    width: 80%;
+    border: thin solid hsl(76, 33%, 34%);
+    overflow-wrap: break-word;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .codebox code{
+    font-weight: normal;
+  }
+
+  .codeheader {
+    color: hsl(7, 67%, 12%);
+    background-color: hsl(76, 33%, 48%);
+    border: thin solid hsl(76, 33%, 34%);
+    font-size: 1.1em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: .33rem;
+  }
+/* ----------------------------- */
