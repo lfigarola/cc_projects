@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DEFER - Web design system</title>
+        <link rel="shortcut icon" href="./media/logo.ico" type="image/x-icon">
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="DEFER - Web Design System" />
+        <meta property="og:image" content="./media/logo_black.png" />
+        <meta property="og:description" content="Use our design!" />
+
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/header.css">
+        <link rel="stylesheet" type="text/css" href="./styles/content.css">
+        <link rel="stylesheet" type="text/css" href="./styles/colors.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-info gold">
+                <h1>DEFER</h1>
+                <img src="./media/logo.png" alt="Defer logo">
+                <p>web design system</p>
+            </div>
+        </header>
+        <div class="nav-container borders-a shadow calibri">
+            <nav>
+                <ul>
+                    <li><a class="a-nav" href="#header">Header</a></li>
+                    <li><a class="a-nav" href="#main">Main</a></li>
+                    <li><a class="a-nav" href="#footer">Footer</a></li>
+                    <li><a class="a-nav" href="#others">Others</a></li>
+                </ul>
+            </nav>
+            <a class="logo" href="#"><img class="logo" src="./media/logo.png" alt="Defer logo"></a>
+        </div>
+
+        <main>
+            <!-- About the Header section-->
+            <section id="header">
+                <div class="container">
+
+                    <!-- Header classes-->
+                    <div class="half">
+                        <div class="content-box borders-a shadow">
+                            <div class="title borders-t">
+                                <h2 class="calibri">Header</h2>
+                            </div>
+                            <div class="content borders-b calibri">
+                                <p>To make a floating navigation panel we have to separate it from the header, leaving there only the company information.</p><br>
+                                <p>To do so and having a responsive site, the following classes are used:</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Styles</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.header-info</code></td>
+                                            <td>Header content</td>
+                                            <td>It's a flexbox container for all the header contents, allowing to center <code>h1</code>, <code>div.logo</code>, <code>p</code>, and other related elements.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.gold</code></td>
+                                            <td>Element color</td>
+                                            <td>Sets the <code>Color:</code> to <code>#ddb885</code>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.nav-container</code></td>
+                                            <td>Navigation panel container</td>
+                                            <td>It's a class applied to the <code>&lt;div&gt;</code> that contains the floating navigation panel.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.borders-a</code></td>
+                                            <td>All borders</td>
+                                            <td>Aplies a border radius of <code>20px</code> to an element.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.shadow</code></td>
+                                            <td>Shadow</td>
+                                            <td>Applies a shadow to the element with an offset of <code>-10px</code>, <code>10px</code>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.calibri</code></td>
+                                            <td>Calibri typeface</td>
+                                            <td>Applies this font-family to the elements.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.a-nav</code></td>
+                                            <td>Navigation anchors</td>
+                                            <td>Styles the anchors for the navigation panel, seting base and <code>:hover</code> characteristics.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Cool text-->
+                    <div class="half">
+                        <div class="content-box borders-a shadow calibri">
+                            <div class="video-text borders-a">
+                                <h2>Cool text right?</h2>
+                                <video autoplay loop muted>
+                                    <source src="./media/neon_circles.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About the Main section-->
+            <section id="main">
+                <div class="container">
+                    <div class="content-box borders-a shadow calibri">
+                        <div class="title borders-t"><h2>Main</h2></div>
+                        <div class="content borders-b">
+
+                            <!-- Table with Main classes-->
+                            <div class="half">
+                                <div class="content-box fit">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Class</th>
+                                                <th>Styles</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code>.container</code></td>
+                                                <td>Main <code>&lt;div&gt;</code></td>
+                                                <td>It's the class for the main <code>&lt;div&gt;</code> of a section. All the content of each section can be centered and aligned thanks to him.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.half</code></td>
+                                                <td>Half a <code>&lt;div&gt;</code>?</td>
+                                                <td>If you're thinking in splitting the content in two columns, this is your class! Don't lose time, buy it now for only $9.99!!</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.content-box</code></td>
+                                                <td>More <code>&lt;div&gt;</code>s</td>
+                                                <td>This one is another flex container, but it's <code>width</code> is a little reduced and is <b>not</b> a flexbox. Weird, right?</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.title</code></td>
+                                                <td>Content tytle</td>
+                                                <td>Presets the <code>&lt;div&gt;</code> to be a cyan title, setting the dimensions, <code>background</code> and <code>font-family</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.content</code></td>
+                                                <td>Content</td>
+                                                <td>A preset flexbox to write the content with a defined <code>background</code> and <code>width</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.borders-t</code></td>
+                                                <td>Top borders</td>
+                                                <td>Sets a radius of <code>20px</code> for the top borders of an element.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.borders-b</code></td>
+                                                <td>Bottom borders</td>
+                                                <td>Sets a radius of <code>20px</code> for the bottom borders of an element.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.fit</code></td>
+                                                <td>Fit content</td>
+                                                <td>Sets the <code>min-width</code> to <code>fit-content</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.brd</code></td>
+                                                <td>Span left border</td>
+                                                <td>Sets a gray right dashed semitransparent border.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>.on-top</code></td>
+                                                <td>Flexbox align</td>
+                                                <td>Aligns items and content at the start of the flexbox.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Some explanation-->
+                            <div class="half">
+                                <div class="content-box">
+                                    <p>With the classes <code>.container</code>, <code>.half</code>, <code>.title</code>, <code>.content-box</code> I can pretty much do everything, separating everything in containers to make this floating sections without much effort. <br><br>
+                                        Each one has it's own characteristics that allows me to make each floating panel responsive. Almost all, are flexboxes.
+                                    </p>
+                                    <p><b><u><br>Fonts</u>:</b></p>
+                                    <div class="content fonts">
+                                        <p><span class="logo"><u>TM cen MT</u> - Logo:<br>
+                                        ¡The quick brown fox jumps over the lazy dog!¿?1234567890 <br>
+                                        <b>¡The quick brown fox jumps over the lazy dog!¿?1234567890</b><br>
+                                        <i>¡The quick brown fox jumps over the lazy dog!¿?1234567890</i></span>
+                                        <br><br><u>Calibri</u> - Main content: <br>
+                                        ¡The quick brown fox jumps over the lazy dog!¿?1234567890 <br>
+                                        <b>¡The quick brown fox jumps over the lazy dog!¿?1234567890</b> <br>
+                                        <i>¡The quick brown fox jumps over the lazy dog!¿?1234567890</i> <br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About the Footer section-->
+            <section id="footer">
+                <div class="container">
+                    <div class="half">
+                        <div class="content-box borders-a shadow calibri">
+                            <div class="title borders-t"><h2>Footer</h2></div>
+                            <div class="content borders-b">
+                                <p>This one here is quite simple. Just a div with the class <code>.footer</code>, that styles a <code>border-top:</code>. The rest is made by the <code>.gold</code> and <code>.a-nav</code> classes used previously.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About the Others section-->
+             <section id="others">
+                <div class="container on-top">
+                    <!-- Cool text code-->
+                    <div class="half">
+                        <div class="content-box borders-a shadow calibri">
+                            <div class="title borders-t"><h2>Cool text</h2></div>
+                            <div class="content borders-b">
+                                <p>You want the code for the cool text?<br>OKok.. Here it is:</p> <br>
+                                <code>
+                                    HTML: <br><br>
+                                    &nbsp;&lt;div class="half"&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;&lt;div class="content-box borders-a shadow calibri"&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;&lt;div class="video-text borders-a"&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;&lt;h2&gt;Cool text right?&lt;/h2&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;&lt;video autoplay loop muted&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;&lt;source src="./neon_circles.mp4" type="video/mp4"&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;&lt;/video&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&lt;/div&gt; <br>
+                                    &nbsp;<span class="brd"></span>&nbsp;<span class="brd"></span>&lt;/div&gt; <br>
+                                    &nbsp;&lt;/div&gt;
+                                    <br><br><br>
+                                    CSS: <br><br>
+                                    &nbsp;.video-text{<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;position: relative;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;text-align: center;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;overflow: hidden;<br>
+                                    &nbsp;}<br><br>
+                                    
+                                    &nbsp;.video-text h2{<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;margin: auto;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;padding: 15% 0;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;font-size: 5vw;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;text-transform: uppercase;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;color: white;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;background-color: black;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;mix-blend-mode: multiply;<br>
+                                    &nbsp;}<br><br>
+                                    
+                                    &nbsp;.video-text video{<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;position: absolute;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;width: 100%;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;top: 0;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;left: 0;<br>
+                                        &nbsp;&nbsp;<span class="brd"></span>&nbsp;&nbsp;z-index: -1;<br>
+                                    &nbsp;}
+                                </code> <br><br>
+                                <p>Sadly.. It only works with a black background..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colors-->
+                    <div class="half">
+                        <div class="content-box borders-a shadow calibri">
+                            <div class="title borders-t"><h2>Some colors</h2></div>
+                            <div class="content borders-b">
+                                <div class="content colors borders-a gold e-black">
+                                    <p>Navigation background: eerie black <br><br>
+                                        #18181a</p>
+                                </div>
+
+                                <div class="content colors borders-a gold jet-black">
+                                    <p>body background: jet-black <br><br>
+                                    linear gradient: 160deg, #272b2c, #14191c</p>
+                                </div>
+
+                                <div class="content colors borders-a cyan-sky">
+                                    <p>Title background: cyan-sky <br><br>
+                                    linear gradient: to right, darkcyan, 80%, #71daf7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+             </section>
+        </main>
+        
+        <footer>
+            <div class="footer calibri gold">
+                <p>&copy; Leandro Figarola</p>
+                <p><a href="https://www.linkedin.com/in/leandrofigarola/" class="a-nav" target="_blank">
+                    <span class="in">In</span> Linkedin</a></p>
+                <p><a href="mailto:lead.fgr@gmail.com" class="a-nav">✉ Contact me</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

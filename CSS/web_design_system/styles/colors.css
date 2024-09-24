@@ -1,0 +1,23 @@
+.colors{
+    margin-top: 3%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 20vh;
+    text-transform: capitalize;
+}
+
+.jet-black{
+    background: linear-gradient(160deg, #272b2c, #14191c);
+}
+
+.cyan-sky{
+    background: linear-gradient(to right, darkcyan, 80%, #71daf7);
+    color: white;
+}
+
+.e-black{
+    background: #18181a;
+}

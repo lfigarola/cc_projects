@@ -1,0 +1,48 @@
+/* ----------- Video text ----------- */
+.video-text{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-text h2{
+    margin: auto;
+    padding: 15% 0;
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    mix-blend-mode: multiply;
+}
+
+.video-text video{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* ---------------------------------- */
+
+/* ----------- Table ----------- */
+table {
+    border: 2px solid lightseagreen;
+    text-align: center;
+    font-size: .85rem;
+    width: 95%;
+}
+
+thead {
+    background-color: lightseagreen;
+    color: #14191C;
+    font-weight: 200;
+}
+
+td {
+    border-top: 1px dashed hsl(76, 33%, 34%);
+}
+footer{
+    text-align: center;
+    color: hsl(164, 16%, 27%);
+}
+/* ----------------------------- */

@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-padding-top: 12%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 1200px;
+    background: linear-gradient(160deg, #272b2c, #14191c);    
+}
+
+.fit{
+    min-width: fit-content;
+}
+
+.calibri{
+    font-family: Calibri, 'Trebuchet MS', serif;
+}
+
+.borders-a{
+    border-radius: 20px;
+}
+
+.borders-t{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.borders-b{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.shadow {
+    box-shadow: -10px 5px 10px black;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.half{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    min-width: 320px;
+    margin: 5% auto;
+}
+
+.content-box{
+    width: 90%;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, darkcyan, 80%, #71daf7);
+    justify-content: left;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+.title h2{
+    margin: 1vw;
+    padding-left: 5vw;
+    font-size: calc(12px + 1vw);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: fit-content;
+    padding: 2% 2% 3% 3%;
+    background-color: aquamarine;
+    color: #14191c;
+    align-items: center;
+}
+
+.content p{
+    font-size: calc(11px + .5vw);
+}
+
+.gold{
+    color: #ddb885;
+}
+
+.brd{
+    border-left: 1px dashed black;
+    opacity: .5;
+}
+code, .calibri code {
+    font-family: monospace;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-top: 1px dashed #ddb885;
+    opacity: .6;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.on-top{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.fonts p{
+    margin: 0;
+    padding: 0;
+}
+
+span.logo{
+    font-family: 'Times New Roman', Times, serif;
+}
