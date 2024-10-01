@@ -10,7 +10,7 @@ body{
     padding: 0;
     margin: 0;
     min-height: 1200px;
-    background: linear-gradient(160deg, #272b2c, #14191c);    
+    background: linear-gradient(160deg, #272b2c, #14191c);
 }
 
 .fit{
@@ -18,7 +18,7 @@ body{
 }
 
 .calibri{
-    font-family: Calibri, 'Trebuchet MS', serif;
+    font-family: 'Source Sans 3', 'Trebuchet MS', serif;
 }
 
 .borders-a{
