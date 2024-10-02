@@ -45,7 +45,7 @@
     container-type: inline-size;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     padding: .7% 1.2%;
     position: sticky;
     top: 1%;
