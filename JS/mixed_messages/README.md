@@ -4,6 +4,7 @@ This project is part of the Codecademy curriculum, designed to enhance skills in
 
 For a detailed overview of the project, check out the [Project Description](./0.project.md).<br>
 You can also check the [Roadmap](./1.1.roadmap.md)
+Check the [Live Version](https://lfigarola.github.io/cc_projects/JS/mixed_messages/)
 
 ---
 
