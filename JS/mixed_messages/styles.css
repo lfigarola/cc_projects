@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1.5rem 0;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div{
+    justify-items: left;
+    margin-right: 2%;
+}
+header img{
+    width: 15%;
+    min-width: 200px;
+    margin-right: 2%;
+}
+header h1 {
+    margin: 0;
+}
+@media only screen and (max-width: 460px) {
+    header p{
+        display: none;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    header img{
+        min-width: 150px;
+    }
+}
+
+
+main {
+    padding: 2rem;
+    background-image: url("./assets/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+
+#output {
+    width: 60%;
+    min-width: 250px;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, .5);
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+#past-life {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem 0;
+    color: #666;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container p{padding-bottom: 15px;}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+
+.container p{
+    margin: 0 5px;
+}
+@media only screen and (max-width: 400px) {
+    .container{
+        font-size: .7rem;
+    }
+}
+
+.ch{color: cyan;}
+.ac{color: lightgreen;}
+.cs{color: violet;}

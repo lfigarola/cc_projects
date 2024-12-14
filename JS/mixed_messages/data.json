@@ -1,0 +1,58 @@
+{
+    "characteristics": [
+        "Ambitious", "Brave", "Cautious", "Daring", "Energetic", "Friendly", "Generous", "Honest", "Impulsive", 
+        "Joyful", "Kind", "Loyal", "Mischievous", "Nervous", "Optimistic", "Patient", "Quiet", "Reliable", 
+        "Stubborn", "Thoughtful", "Unpredictable", "Vain", "Witty", "Xenophobic", "Youthful", "Zealous", "Adventurous", 
+        "Bold", "Creative", "Determined", "Empathetic", "Fearless", "Grumpy", "Humble", "Intelligent", "Jealous", 
+        "Knowledgeable", "Lazy", "Motivated", "Naïve", "Outgoing", "Pessimistic", "Quick-witted", "Resourceful", "Sensitive", 
+        "Tactful", "Understanding", "Versatile", "Warm-hearted", "Zealous"
+    ],
+    "professions": [
+      "Accountant", "Architect", "Baker", "Barber", "Biologist", "Carpenter",
+      "Chef", "Chemist", "Coach", "Dentist", "Doctor", "Electrician",
+      "Engineer", "Farmer", "Firefighter", "Gardener", "Graphic Designer",
+      "Hairdresser", "Historian", "Journalist", "Lawyer", "Librarian",
+      "Mechanic", "Musician", "Nurse", "Painter", "Pharmacist", "Photographer",
+      "Pilot", "Plumber", "Police Officer", "Professor", "Psychologist",
+      "Real Estate Agent", "Scientist", "Software Developer", "Surgeon",
+      "Teacher", "Therapist", "Translator", "Travel Agent", "Veterinarian",
+      "Video Game Developer", "Web Developer", "Writer", "Actor", "Filmmaker",
+      "Fashion Designer", "Social Worker", "Event Planner"
+    ],
+    "actions": [
+      "Saved a princess", "Aced an exam", "Hacked an encrypted file", "Went undercover as a stripper", 
+      "Went on a violent rampage", "Took revenge for a great grievance", "Escaped from prison", 
+      "Discovered a hidden treasure", "Survived a plane crash", "Fell in love at first sight", 
+      "Stole a priceless artifact", "Fought off a gang of thieves", "Rescued a kidnapped child", 
+      "Climbed the highest mountain", "Solved a decades-old mystery", "Became a secret agent", 
+      "Won a high-stakes poker game", "Survived a zombie apocalypse", "Found a long-lost sibling", 
+      "Exposed a government conspiracy", "Became a famous rock star", "Defused a bomb", 
+      "Escaped from a haunted house", "Won a cooking competition", "Became a millionaire overnight", 
+      "Survived a shipwreck", "Discovered an alien civilization", "Became a superhero", "Solved a murder case", 
+      "Survived a natural disaster", "Became a world-renowned artist", "Escaped from a cult", "Won a marathon", 
+      "Became a tech mogul", "Rescued animals from a burning building", "Survived a car crash", "Became a famous author", 
+      "Escaped from a war zone", "Found a cure for a deadly disease", "Became a professional athlete", 
+      "Survived a kidnapping", "Became a renowned chef", "Escaped from a sinking ship", "Became a famous actor", 
+      "Survived a plane hijacking", "Became a top fashion designer", "Escaped from a collapsing building", 
+      "Became a famous scientist", "Survived a terrorist attack", "Became a legendary explorer"
+    ],
+    "causes": [
+      "Got framed for a crime", "Lost your memory", "Received an ancient prophecy", "Got your car stolen", 
+      "Bumped into an old friend", "Found out you were adopted", "Came back to life after an accident", 
+      "Discovered a hidden talent", "Uncovered a family secret", "Found a mysterious letter", "Inherited a haunted house", 
+      "Discovered you had superpowers", "Won the lottery", "Got stranded on a deserted island", 
+      "Became the target of a conspiracy", "Lost your job unexpectedly", "Found a magic artifact", 
+      "Survived a natural disaster", "Got mistaken for someone else", "Received a message from the future",
+      "Found a time machine", "Got trapped in an alternate reality", "Witnessed a crime", "Escaped from an asylum", 
+      "Discovered you were royalty", "Fell into a hidden world", "Got transformed into an animal", 
+      "Survived an assassination attempt", "Met your future self", "Found out your partner was a spy", 
+      "Got cursed by a witch", "Escaped from an abusive relationship", "Found an ancient map", 
+      "Witnessed a supernatural event", "Discovered your twin exists", "Became a test subject in an experiment", 
+      "Uncovered government secrets", "Washed ashore after a shipwreck", "Got involved in an underground fight club", 
+      "Became a vigilante", "Survived a plane crash", "Discovered a portal to another dimension", 
+      "Found out you can read minds", "Got caught in a bank robbery", "Became a bounty hunter", 
+      "Uncovered a lost civilization", "Got lost in the wilderness", "Found out your dreams predict the future", 
+      "Woke up with no recollection of your past", "Became the leader of a rebellion"
+    ]
+  }
+  
