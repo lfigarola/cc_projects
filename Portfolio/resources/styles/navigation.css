@@ -1,0 +1,140 @@
+/* -------------------- Header --------------------- */
+body > header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: var(--color-text);
+    background: rgba(34, 50, 65, .92);
+    border-bottom: .06rem solid rgba(255, 255, 255, .16);
+    backdrop-filter: blur(1rem);
+}
+
+body > header > div{
+    width: min(92%, var(--content-width));
+    min-height: 4.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+/* ------------------------------------------------- */
+
+
+/* --------------------- Brand --------------------- */
+body > header > div > a{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    flex: 0 0 auto;
+    text-decoration: none;
+    user-select: none;
+}
+
+body > header > div > a img{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+body > header > div > a span{
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1.04rem + .65vw, 1.72rem);
+    letter-spacing: .02em;
+}
+/* ------------------------------------------------- */
+
+
+/* ------------------ Navigation ------------------- */
+body > header nav{
+    display: flex;
+    align-items: center;
+    gap: clamp(.8rem, 2vw, 1.7rem);
+}
+
+body > header nav a{
+    padding: .35rem 0;
+    border-bottom: .12rem solid transparent;
+    font-size: .95rem;
+    font-weight: 650;
+    text-decoration: none;
+    user-select: none;
+}
+
+body > header nav a:hover,
+body > header nav a[aria-current="page"]{
+    color: var(--color-gold);
+    border-bottom-color: currentColor;
+}
+/* ------------------------------------------------- */
+
+
+/* ----------------- Menu Button ------------------- */
+body > header button{
+    display: none;
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: .65rem;
+    color: var(--color-text);
+    background: transparent;
+    border: .06rem solid rgba(255, 255, 255, .35);
+    border-radius: var(--radius-small);
+    cursor: pointer;
+}
+
+body > header button span{
+    display: block;
+    height: .12rem;
+    margin: .25rem 0;
+    background: currentColor;
+    border-radius: 1rem;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+body > header button[aria-expanded="true"] span:first-child{
+    transform: translateY(.37rem) rotate(45deg);
+}
+
+body > header button[aria-expanded="true"] span:nth-child(2){
+    opacity: 0;
+}
+
+body > header button[aria-expanded="true"] span:last-child{
+    transform: translateY(-.37rem) rotate(-45deg);
+}
+/* ------------------------------------------------- */
+
+
+/* ------------------ Responsive ------------------- */
+@media (max-width: 900px){
+    body > header button{
+        display: block;
+    }
+
+    body > header nav{
+        position: absolute;
+        top: calc(100% + .5rem);
+        left: 4%;
+        right: 4%;
+        max-height: calc(100vh - 5.5rem);
+        padding: .65rem 1rem;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        overflow-y: auto;
+        color: var(--color-text);
+        background: rgba(34, 50, 65, .98);
+        border: .06rem solid rgba(255, 255, 255, .16);
+        border-radius: var(--radius-small);
+        box-shadow: var(--shadow-large);
+    }
+
+    body > header nav.is-open{
+        display: flex;
+    }
+
+    body > header nav a{
+        padding: .75rem 0;
+    }
+}
+/* ------------------------------------------------- */

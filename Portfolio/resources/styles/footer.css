@@ -1,0 +1,41 @@
+/* -------------------- Footer --------------------- */
+body > footer{
+    color: var(--color-text);
+    background: #182632;
+}
+
+body > footer > div{
+    width: min(88%, var(--content-width));
+    min-height: 7rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+body > footer > div p{
+    margin: 0;
+}
+
+body > footer nav{
+    display: flex;
+    gap: 1.3rem;
+}
+
+body > footer nav a{
+    text-underline-offset: .2rem;
+}
+/* ------------------------------------------------- */
+
+
+/* ------------------ Responsive ------------------- */
+@media (max-width: 900px){
+    body > footer > div{
+        padding: 1.7rem 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .7rem;
+    }
+}
+/* ------------------------------------------------- */

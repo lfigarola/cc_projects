@@ -1,0 +1,423 @@
+/* ------------------ Page Base -------------------- */
+body {
+    color: var(--color-text);
+    background: linear-gradient(90deg, var(--color-business) 0 50%, var(--color-tech) 50% 100%);
+}
+
+main {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+}
+
+/* ------------------------------------------------- */
+
+/* -------------------- Header --------------------- */
+body>header {
+    position: absolute;
+    top: clamp(1.7rem, 4vw, 2.7rem);
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+
+body>header a {
+    display: inline-flex;
+    gap: .45em;
+    font-size: clamp(2.4rem, 4.1vw, 4.1rem);
+    line-height: .9;
+    text-decoration: none;
+    text-transform: uppercase;
+    filter: drop-shadow(-.18rem .2rem .6rem rgba(0, 0, 0, .5));
+    pointer-events: auto;
+    user-select: none;
+}
+
+body>header a span:first-child {
+    color: var(--color-gold);
+}
+
+/* ------------------------------------------------- */
+
+
+/* --------------------- Sides --------------------- */
+main>section {
+    flex: 1 1 0;
+    min-height: 100svh;
+    padding: clamp(7.3rem, 12vw, 10rem) clamp(2rem, 4vw, 4.5rem) clamp(2.5rem, 5vw, 4rem);
+    display: flex;
+    transition: flex-grow .5s ease;
+}
+
+.business-side {
+    background: radial-gradient(circle at 100% 38%, var(--color-business-soft) 0, var(--color-business) 42%);
+}
+
+.tech-side {
+    background: radial-gradient(circle at 0 38%, var(--color-tech-soft) 0, var(--color-tech) 42%);
+}
+
+main>section>div {
+    width: min(30vw, 31rem);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.business-side>div {
+    margin-right: auto;
+}
+
+.tech-side>div {
+    margin-left: auto;
+}
+
+main>section header {
+    min-height: 4.5rem;
+}
+
+main>section header h2 {
+    margin-bottom: .25rem;
+    font-size: clamp(1.7rem, 2.25vw, 2.5rem);
+}
+
+.business-side header {
+    text-align: right;
+}
+
+main>section header p {
+    margin-bottom: 0;
+    color: rgba(236, 240, 241, .76);
+    font-size: .94rem;
+}
+
+/* ------------------------------------------------- */
+
+
+/* ---------------- Hover Effects ------------------ */
+@media (min-width: 1101px) and (hover: hover) and (pointer: fine) {
+    main>section:hover {
+        flex-grow: 2;
+    }
+}
+
+/* ------------------------------------------------- */
+
+
+/* ---------------- Central Image ------------------ */
+main>img {
+    position: absolute;
+    top: clamp(10.6rem, 16vw, 13.5rem);
+    left: 50%;
+    z-index: 3;
+    width: min(29vw, 31rem);
+    height: auto;
+    transform: translateX(-50%);
+    pointer-events: none;
+    filter: drop-shadow(-.1rem .45rem .7rem rgba(4, 12, 18, .2));
+}
+
+/* ------------------------------------------------- */
+
+
+/* -------------------- Offers --------------------- */
+.offer-list {
+    margin: clamp(2.4rem, 5vh, 3.7rem) 0 1.5rem;
+    display: grid;
+    gap: clamp(.8rem, 1.7vh, 1.2rem);
+}
+
+.offer-list details {
+    color: var(--color-ink);
+    background: rgba(246, 243, 237, .94);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-large);
+    overflow: hidden;
+}
+
+.offer-list summary {
+    position: relative;
+    padding: .65rem 2.7rem .65rem 1rem;
+    color: var(--color-business);
+    background: var(--color-gold);
+    font-size: clamp(1.05rem, .96rem + .25vw, 1.2rem);
+    font-weight: 750;
+    line-height: 1.15;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.offer-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.offer-list summary::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: .95rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: grid;
+    place-items: center;
+    border: .12rem solid currentColor;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+
+.offer-list details[open] summary::after {
+    content: '−';
+}
+
+.offer-list summary:hover {
+    background: #ffc45d;
+}
+
+.offer-list details>div {
+    padding: .65rem 1rem .8rem;
+    font-size: .92rem;
+    line-height: 1.34;
+}
+
+.offer-list details>div p {
+    margin-bottom: .3rem;
+}
+
+.offer-list details>div ul {
+    margin: .2rem 0 0;
+    padding-left: 1.25rem;
+}
+
+.offer-list details>div li {
+    margin: .12rem 0;
+}
+
+/* ------------------------------------------------- */
+
+
+/* -------------------- Buttons -------------------- */
+main>section>div>a {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.business-side>div>a {
+    align-self: flex-end;
+    color: var(--color-business);
+    background: var(--color-gold);
+    box-shadow: var(--shadow-small);
+}
+
+.business-side>div>a:hover {
+    background: #ffc45d;
+}
+
+.tech-side>div>a {
+    border-color: currentColor;
+}
+
+.tech-side>div>a:hover {
+    color: var(--color-business);
+    background: var(--color-text);
+}
+
+/* Contact Button */
+main>a[data-dialog-target] {
+    position: absolute;
+    top: clamp(30rem, 48vw, 38rem);
+    left: 50%;
+    z-index: 4;
+    min-width: clamp(9rem, 12vw, 12rem);
+    color: var(--color-business);
+    background: var(--color-text);
+    box-shadow: var(--shadow-small);
+    transform: translateX(-50%);
+}
+
+main>a[data-dialog-target]:hover {
+    color: var(--color-business);
+    background: var(--color-gold);
+    transform: translate(-50%, -.18rem);
+}
+
+main>a[data-dialog-target]:active {
+    transform: translate(-50%, .05rem);
+}
+
+/* ------------------------------------------------- */
+
+
+/* -------------------- Footer --------------------- */
+main>footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: rgba(236, 240, 241, .72);
+    font-size: .8rem;
+}
+
+main>footer p {
+    margin: 0;
+}
+
+main>footer nav {
+    display: flex;
+    gap: 1.2rem;
+}
+
+main>footer nav a {
+    text-underline-offset: .2rem;
+}
+
+/* ------------------------------------------------- */
+
+
+/* ------------------ Responsive ------------------- */
+@media (max-width: 1100px) {
+    body {
+        background: var(--color-business);
+    }
+
+    body>header {
+        position: relative;
+        top: auto;
+        padding: 2.2rem 1rem 1rem;
+        background: var(--color-business);
+    }
+
+    body>header a {
+        font-size: clamp(2.2rem, 8vw, 3.8rem);
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main>img {
+        position: relative;
+        top: auto;
+        left: auto;
+        order: 1;
+        width: min(78%, 36rem);
+        margin: 1rem auto 0;
+        transform: none;
+    }
+
+    main>a[data-dialog-target] {
+        position: relative;
+        top: auto;
+        left: auto;
+        order: 2;
+        align-self: center;
+        margin: 1.5rem 0 3rem;
+        transform: none;
+    }
+
+    main>a[data-dialog-target]:hover {
+        transform: translateY(-.18rem);
+    }
+
+    main>a[data-dialog-target]:active {
+        transform: translateY(.05rem);
+    }
+
+    main>section {
+        flex: none;
+        min-height: auto;
+        padding: clamp(4rem, 9vw, 6rem) clamp(1.3rem, 7vw, 4.5rem);
+    }
+
+    .business-side {
+        order: 3;
+        background: var(--color-business);
+    }
+
+    .tech-side {
+        order: 4;
+        background: var(--color-tech);
+    }
+
+    main>section>div {
+        width: min(100%, 46rem);
+        margin: 0 auto !important;
+    }
+
+    .business-side header {
+        text-align: left;
+    }
+
+    main>section header {
+        min-height: auto;
+    }
+
+    .offer-list {
+        margin-top: 2.5rem;
+    }
+
+    .offer-list details>div {
+        font-size: 1rem;
+        line-height: 1.45;
+    }
+
+    main>section>div>a,
+    .business-side>div>a {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+
+    main>footer {
+        position: relative;
+        order: 5;
+        padding: 1.2rem;
+        background: #182632;
+    }
+}
+
+@media (max-width: 520px) {
+    body>header {
+        padding-top: 1.7rem;
+    }
+
+    body>header a {
+        gap: .22em;
+        flex-direction: column;
+    }
+
+    main>img {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    main>section {
+        padding-inline: 1rem;
+    }
+
+    .offer-list details>div {
+        font-size: .96rem;
+    }
+
+    main>section>div>a,
+    .business-side>div>a {
+        width: 100%;
+    }
+
+    main>footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .55rem;
+    }
+}
+
+/* ------------------------------------------------- */

@@ -1,0 +1,176 @@
+/* ------------------- Variables ------------------- */
+:root{
+    --color-business: #2c3e50;
+    --color-business-soft: #40556a;
+    --color-gold: #f5b041;
+    --color-gold-dark: #c98216;
+    --color-tech: #2d545e;
+    --color-tech-soft: #3d6871;
+    --color-paper: #f6f3ed;
+    --color-surface: #ffffff;
+    --color-text: #ecf0f1;
+    --color-ink: #203242;
+    --color-muted: #5f6f7b;
+    --color-line: rgba(32, 50, 66, .18);
+    --color-focus: #fbd38d;
+    --font-main: 'Calibri', 'Source Sans 3', 'Carlito', 'Segoe UI', Arial, sans-serif;
+    --font-display: 'Baskervville SC', Georgia, serif;
+    --shadow-small: -.2rem .25rem .75rem rgba(8, 18, 27, .24);
+    --shadow-large: -.55rem .65rem 1.8rem rgba(8, 18, 27, .34);
+    --radius-small: .45rem;
+    --radius-large: 1.2rem;
+    --content-width: 74rem;
+}
+/* ------------------------------------------------- */
+
+
+/* ---------------- Reset and Base ----------------- */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+body{
+    min-width: 18rem;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--color-ink);
+    background: var(--color-paper);
+    font-family: var(--font-main);
+    font-size: clamp(1rem, .96rem + .16vw, 1.1rem);
+    line-height: 1.45;
+}
+
+body.menu-open{
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea{
+    font: inherit;
+}
+
+a{
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul{
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3{
+    line-height: 1.08;
+}
+
+p,
+li{
+    max-width: 68ch;
+}
+
+::selection{
+    color: var(--color-ink);
+    background: var(--color-gold);
+}
+
+:focus-visible{
+    outline: .2rem solid var(--color-focus);
+    outline-offset: .2rem;
+}
+/* ------------------------------------------------- */
+
+
+/* ------------------ Skip Link -------------------- */
+.skip-link{
+    position: fixed;
+    top: .75rem;
+    left: .75rem;
+    z-index: 20;
+    padding: .65rem .9rem;
+    color: var(--color-business);
+    background: var(--color-text);
+    border-radius: var(--radius-small);
+    transform: translateY(-180%);
+}
+
+.skip-link:focus{
+    transform: translateY(0);
+}
+/* ------------------------------------------------- */
+
+
+/* ------------------- Buttons --------------------- */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    padding: .75rem 1.2rem;
+    border: .1rem solid transparent;
+    border-radius: var(--radius-small);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .2s ease, background-color .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover{
+    transform: translateY(-.18rem);
+}
+
+.btn:active{
+    transform: translateY(.05rem);
+    box-shadow: none;
+}
+
+.btn-primary{
+    color: var(--color-business);
+    background: var(--color-gold);
+    box-shadow: var(--shadow-small);
+}
+
+.btn-primary:hover{
+    background: #ffc45d;
+}
+
+.btn-secondary{
+    border-color: currentColor;
+}
+
+.btn-secondary:hover{
+    color: var(--color-business);
+    background: var(--color-text);
+}
+/* ------------------------------------------------- */
+
+/* ---------------- Reduced Motion ----------------- */
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+/* ------------------------------------------------- */

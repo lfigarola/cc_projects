@@ -1,0 +1,80 @@
+/* -------------------- Contact -------------------- */
+dialog{
+    width: min(90%, 28rem);
+    padding: 0;
+    color: var(--color-text);
+    background: var(--color-business);
+    border: .08rem solid rgba(245, 176, 65, .65);
+    border-radius: var(--radius-small);
+    box-shadow: var(--shadow-large);
+}
+
+dialog::backdrop{
+    background: rgba(8, 18, 27, .62);
+    backdrop-filter: blur(.5rem);
+}
+
+dialog header p{
+    margin-bottom: .3rem;
+    color: var(--color-gold);
+    font-size: .82rem;
+    font-weight: 750;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+dialog > div{
+    padding: clamp(1.25rem, 4vw, 1.7rem);
+}
+
+dialog header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+dialog header h2{
+    margin-bottom: .45rem;
+    font-size: 1.7rem;
+    font-weight: 750;
+}
+
+dialog button{
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 auto;
+    color: var(--color-gold);
+    background: transparent;
+    border: .08rem solid currentColor;
+    border-radius: 50%;
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+dialog button:hover{
+    color: var(--color-business);
+    background: var(--color-gold);
+}
+
+dialog ul{
+    margin: 1.15rem 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: .06rem solid rgba(236, 240, 241, .28);
+}
+
+dialog li{
+    padding: .75rem 0;
+    border-bottom: .06rem solid rgba(236, 240, 241, .28);
+}
+
+dialog a{
+    color: var(--color-gold);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+    text-underline-offset: .22rem;
+}
+/* ------------------------------------------------- */

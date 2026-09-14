@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive websites and JavaScript learning projects by Leandro Figarola.">
+    <meta name="theme-color" content="#2d545e">
+    <title>Dev Projects | Leandro Figarola</title>
+
+    <link rel="icon" href="./resources/media/logo-trs.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./resources/styles/styles.css">
+    <link rel="stylesheet" href="./resources/styles/navigation.css">
+    <link rel="stylesheet" href="./resources/styles/pages.css">
+    <link rel="stylesheet" href="./resources/styles/footer.css">
+    <link rel="stylesheet" href="./resources/styles/developer.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a> <!-- for accessibility -->
+
+    <!-- Header -->
+    <header>
+        <div>
+            <a href="./index.html" aria-label="Leandro Figarola, home">
+                <img src="./resources/media/Logo-trs.png" width="75" height="75" alt="">
+                <span>Leandro Figarola</span>
+            </a>
+
+            <button type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-nav" aria-label="Primary navigation">
+                <a href="./index.html">Home</a>
+                <a href="#projects" aria-current="page">Projects</a>
+                <a href="#approach">Approach</a>
+                <a href="./business.html">Business</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Introduction -->
+        <section class="page-hero">
+            <div>
+                <header>
+                    <p class="eyebrow">Web Developer</p>
+                    <h1>Custom and practical solutions</h1>
+                    <p class="hero-lead">I focus on understanding how structure, layout and
+                        interaction work together for giving the best user experience.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View Projects</a>
+                        <a class="btn btn-secondary" href="https://github.com/lfigarola/cc_projects" target="_blank"
+                            rel="noopener noreferrer">GitHub Repository</a>
+                    </div>
+                </header>
+
+                <ol aria-label="Development principles">
+                    <li><span>01</span> Relative before fixed</li>
+                    <li><span>02</span> Flex around the content</li>
+                    <li><span>03</span> Fewer breakpoint patches</li>
+                    <li><span>04</span> Comments that map intent</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Selected Projects -->
+        <section id="projects" class="page-section">
+            <div>
+                <header class="section-intro">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>Early Projects to Showcase</h2>
+                    <p>Kept public so the progression stays visible. Some begin from Codecademy briefs, the implementation and finishing decisions are my own.</p>
+                </header>
+
+                <div class="feature-list">
+                    <article>
+                        <header>
+                            <p class="eyebrow">Responsive Website</p>
+                            <h3>Tavern Swindler</h3>
+                        </header>
+                        <div>
+                            <p>A fictional tabletop-gaming tavern with a flexible navigation bar, nested menu,
+                                promotional layout and responsive location section.</p>
+                            <ul aria-label="Tavern Swindler technologies">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                                <li>Responsive design</li>
+                            </ul>
+                            <footer>
+                                <a href="https://lfigarola.github.io/cc_projects/CSS/tavern_swindler/" target="_blank"
+                                    rel="noopener noreferrer">Open project</a>
+                                <a href="https://github.com/lfigarola/cc_projects/tree/main/CSS/tavern_swindler"
+                                    target="_blank" rel="noopener noreferrer">View code</a>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <article>
+                        <header>
+                            <p class="eyebrow">Reference Page</p>
+                            <h3>Fonts & Colors</h3>
+                        </header>
+                        <div>
+                            <p>A compact CSS cheat sheet that turns typography and color notes into a navigable
+                                reference with structured tables and code samples.</p>
+                            <ul aria-label="Fonts and Colors technologies">
+                                <li>Semantic HTML</li>
+                                <li>Tables</li>
+                                <li>CSS</li>
+                            </ul>
+                            <footer>
+                                <a href="https://lfigarola.github.io/cc_projects/CSS/cheat_sheet/" target="_blank"
+                                    rel="noopener noreferrer">Open project</a>
+                                <a href="https://github.com/lfigarola/cc_projects/tree/main/CSS/cheat_sheet"
+                                    target="_blank" rel="noopener noreferrer">View code</a>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <article>
+                        <header>
+                            <p class="eyebrow">Design System</p>
+                            <h3>DEFER</h3>
+                        </header>
+                        <div>
+                            <p>An early design-system exercise that documents reusable layout, typography, border and
+                                color classes in the same visual language it describes.</p>
+                            <ul aria-label="DEFER technologies">
+                                <li>HTML</li>
+                                <li>Modular CSS</li>
+                                <li>Flexbox</li>
+                                <li>Design tokens</li>
+                            </ul>
+                            <footer>
+                                <a href="https://lfigarola.github.io/cc_projects/CSS/web_design_system" target="_blank"
+                                    rel="noopener noreferrer">Open project</a>
+                                <a href="https://github.com/lfigarola/cc_projects/tree/main/CSS/web_design_system"
+                                    target="_blank" rel="noopener noreferrer">View code</a>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <article>
+                        <header>
+                            <p class="eyebrow">Spec Recreation</p>
+                            <h3>Tea Cozy</h3>
+                        </header>
+                        <div>
+                            <p>A close recreation of a supplied design, using flexible containers to hold the
+                                composition together even where the original measurements did not.</p>
+                            <ul aria-label="Tea Cozy technologies">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                                <li>Visual matching</li>
+                            </ul>
+                            <footer>
+                                <a href="https://lfigarola.github.io/cc_projects/CSS/tea_cozy/" target="_blank"
+                                    rel="noopener noreferrer">Open project</a>
+                                <a href="https://github.com/lfigarola/cc_projects/tree/main/CSS/tea_cozy"
+                                    target="_blank" rel="noopener noreferrer">View code</a>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <article>
+                        <header>
+                            <p class="eyebrow">JavaScript</p>
+                            <h3>Mixed Messages</h3>
+                        </header>
+                        <div>
+                            <p>A playful past-life generator that loads structured data and combines random selections
+                                into a new result on every click.</p>
+                            <ul aria-label="Mixed Messages technologies">
+                                <li>JavaScript</li>
+                                <li>JSON</li>
+                                <li>Async fetch</li>
+                                <li>DOM</li>
+                            </ul>
+                            <footer>
+                                <a href="https://lfigarola.github.io/cc_projects/JS/mixed_messages/" target="_blank"
+                                    rel="noopener noreferrer">Open project</a>
+                                <a href="https://github.com/lfigarola/cc_projects/tree/main/JS/mixed_messages"
+                                    target="_blank" rel="noopener noreferrer">View code</a>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smaller Experiments -->
+        <section id="approach" class="page-section">
+            <div>
+                <header class="section-intro">
+                    <p class="eyebrow">Smaller Experiments</p>
+                    <h2>Basic and interactive</h2>
+                    <p>Short exercises, useful to isolate a forms, event handlers or browser behaviors.</p>
+                </header>
+
+                <ul>
+                    <li><a href="https://lfigarola.github.io/cc_projects/JS/01.jQuery/gameboard/" target="_blank"
+                            rel="noopener noreferrer"><span>jQuery menus</span>GameBoard</a></li>
+                    <li><a href="https://lfigarola.github.io/cc_projects/JS/01.jQuery/font-preview/" target="_blank"
+                            rel="noopener noreferrer"><span>Live input</span>Font Preview</a></li>
+                    <li><a href="https://lfigarola.github.io/cc_projects/JS/formAStory/" target="_blank"
+                            rel="noopener noreferrer"><span>HTML forms</span>Form a Story</a></li>
+                    <li><a href="https://lfigarola.github.io/cc_projects/JS/number_guesser/" target="_blank"
+                            rel="noopener noreferrer"><span>Game logic</span>Number Guesser</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="page-section">
+            <div>
+                <header>
+                    <p class="eyebrow">What’s Next</p>
+                    <h2>This is part of the path</h2>
+                    <p>If you have feedback, a collaboration idea or a real problem where business thinking and development meet, I would like to hear it.</p>
+                </header>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="mailto:leafigarola@gmail.com">Email Me</a>
+                    <a class="btn btn-secondary" href="https://www.linkedin.com/in/leandrofigarola/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; <span data-current-year>2026</span> Leandro Figarola</p>
+            <nav aria-label="Footer navigation">
+                <a href="./index.html">Portfolio</a>
+                <a href="./business.html">Business</a>
+                <a href="https://www.linkedin.com/in/leandrofigarola/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./resources/scripts/site.js"></script>
+</body>
+
+</html>
